@@ -24,7 +24,7 @@
         <a class="logo-header logo link" href="">Web<span class="studio">Studio</span></a>
         <ul class="nav-list list">
           <li class="nav-item">
-            <a class="nav-links link" href="./index.html">Studio</a>
+            <a class="nav-links link current" href="./index.html">Studio</a>
           </li>
           <li class="nav-item">
             <a class="nav-links link" href="./portfolio.html">Portfolio</a>
@@ -51,7 +51,7 @@
     <section class="hero-section section">
       <div class="hero-container container">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button class="hero-btn" type="button">Order Service</button>
+        <button class="hero-btn" type="button" data-modal-open>Order Service</button>
       </div>
     </section>
     <section class="features-section section">
@@ -252,7 +252,7 @@
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a class="team-cards-soc-link" href="" target="_blank" rel="noopener noreferrer"
+                <a class="team-cards-soc-link link" href="" target="_blank" rel="noopener noreferrer"
                   aria-label="linkedin link">
                   <svg class="team-cards-soc-icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-linkedin"></use>
@@ -269,48 +269,42 @@
         <h1 class="what-title">Customers</h1>
         <ul class="customers-list list">
           <li class="customers-item">
-            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer"
-              aria-label="instagram link">
+            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon-client1">
               <svg class="customers-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-client1"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
-            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer"
-              aria-label="instagram link">
+            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon-client2">
               <svg class="customers-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-client2"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
-            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer"
-              aria-label="instagram link">
+            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon-client3">
               <svg class="customers-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-client3"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
-            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer"
-              aria-label="instagram link">
+            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon-client4">
               <svg class="customers-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-client4"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
-            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer"
-              aria-label="instagram link">
+            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon-client5">
               <svg class="customers-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-client5"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
-            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer"
-              aria-label="instagram link">
+            <a class="customers-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon-client6">
               <svg class="customers-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-client6"></use>
               </svg>
@@ -322,14 +316,62 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer-container">
-      <a class="footer-logo logo link" href="">Web<span class="studio">Studio</span></a>
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with
-        digital marketing & growth solutions.
-      </p>
+    <div class="footer-container container">
+      <div class="footer-logo-text-container">
+        <div class="footer-logo-container"><a class="footer-logo logo link" href="">Web<span
+              class="studio">Studio</span></a></div>
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
+      <div class="soc-media-container">
+        <p class="soc-media-text">Social media</p>
+        <ul class="soc-media-list list">
+          <li class="soc-media-item">
+            <a class="soc-media-link link" href="" target="_blank" rel="noopener noreferrer"
+              aria-label="instagram link">
+              <svg class="soc-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-media-item">
+            <a class="soc-media-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter link">
+              <svg class="soc-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-media-item">
+            <a class="soc-media-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook link">
+              <svg class="soc-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-media-item">
+            <a class="soc-media-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin link">
+              <svg class="soc-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="btn-close" data-modal-close>
+        <svg class="btn-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
