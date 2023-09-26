@@ -94,11 +94,11 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* .link:hover,
+.link:hover,
 .link:focus,
 .link:active {
   color: var(--pressed-state);
-} */
+}
 .container {
   width: 1158px;
   margin: 0 auto;
