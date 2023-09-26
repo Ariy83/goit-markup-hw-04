@@ -406,7 +406,10 @@ img {
 .customers-icon {
   fill: currentColor;
 }
-.customers-item:hover .customers-link,
+.customers-item:hover .customers-link {
+  color: var(--pressed-state);
+  border-color: var(--pressed-state);
+}
 .customers-item:focus .customers-link {
   color: var(--pressed-state);
   border-color: var(--pressed-state);
