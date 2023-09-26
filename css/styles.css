@@ -492,9 +492,7 @@ img {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transform: translateY(0);
-  z-index: var(--index-modal);
   transition: opacity var(--trns-fast), visibility var(--trns-fast);
-  transition-delay: 200ms;
 }
 
 .modal {
@@ -515,7 +513,7 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition-delay: 300ms;
+  transform: translateY(100%);
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
